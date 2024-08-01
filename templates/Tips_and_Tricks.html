@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks</title>
+    <style>
+        body {
+            background-color: none;
+            background-image: url('https://cdn.wallpapersafari.com/75/20/39JsXw.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(8, 0, 0);
+        }
+        /* Style for the rectangular boxes */
+        .tip-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tip-option {
+            width: calc(33.33% - 20px);
+            padding: 10px;
+            border: 1px solid #d07878;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect */
+        .tip-option:hover {
+            background-color: #37bac9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tips and Tricks</h1>
+    
+    <!-- Tips options as rectangular boxes -->
+    <div class="tip-options">
+        <div class="tip-option" onclick="showTip('Start Early')">Start Early</div>
+        <div class="tip-option" onclick="showTip('Understand the Exam Pattern')">Understand the Exam Pattern</div>
+        <div class="tip-option" onclick="showTip('Quality Study Material')">Quality Study Material</div>
+        <div class="tip-option" onclick="showTip('Join a Reputed Coaching Institute')">Join a Reputed Coaching Institute</div>
+        <div class="tip-option" onclick="showTip('Create a Study Schedule')">Create a Study Schedule</div>
+        <div class="tip-option" onclick="showTip('Focus on Conceptual Understanding')">Focus on Conceptual Understanding</div>
+        <div class="tip-option" onclick="showTip('Practice Regularly')">Practice Regularly</div>
+        <div class="tip-option" onclick="showTip('Time Management')">Time Management</div>
+        <div class="tip-option" onclick="showTip('Stay Updated')">Stay Updated</div>
+        <div class="tip-option" onclick="showTip('Mock Tests and Previous Year Papers')">Mock Tests and Previous Year Papers</div>
+        <div class="tip-option" onclick="showTip('Healthy Lifestyle')">Healthy Lifestyle</div>
+        <div class="tip-option" onclick="showTip('Stay Motivated')">Stay Motivated</div>
+        <div class="tip-option" onclick="showTip('Revision Strategy')">Revision Strategy</div>
+        <div class="tip-option" onclick="showTip('Seek Help When Needed')">Seek Help When Needed</div>
+        <div class="tip-option" onclick="showTip('Stay Calm During Exams')">Stay Calm During Exams</div>
+    </div>
+
+    <!-- JavaScript function to display selected tip -->
+    <script>
+        function showTip(tipText) {
+            alert(tipText);
+        }
+    </script>
+</body>
+</html>

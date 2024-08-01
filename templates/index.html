@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <h1>College Admission Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="10th_marks">10th Marks:</label>
+        <input type="number" id="10th_marks" name="10th_marks" required><br><br>
+        
+        <label for="12th_marks">12th Marks:</label>
+        <input type="number" id="12th_marks" name="12th_marks" required><br><br>
+        
+        <label for="12th_division">12th Division:</label>
+        <input type="number" id="12th_division" name="12th_division" required><br><br>
+        
+        <label for="aieee_rank">AIEEE Rank:</label>
+        <input type="number" id="aieee_rank" name="aieee_rank" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+    
+    <div id="predictions">
+        <h2>Predictions</h2>
+        <div id="xg_predictions" class="predictions"></div>
+        <div id="dt_predictions" class="predictions"></div>
+    </div>
+
+    {% if result_xg %}
+    <!-- <h2>XGBoost Predicted Colleges:</h2> -->
+    <ul>
+        {% for college in result_xg %}
+        <li>{{ college }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+    <!-- {% if result_dt %}
+    <h2>Decision Tree Predicted Colleges:</h2>  
+    <ul>
+        {% for college in result_dt %} 
+        <li>{{ college }}</li>
+        {% endfor %} 
+    </ul>
+    {% endif %} -->
+    
+    <script src="static/script.js"></script>
+</body>
+
+</html>

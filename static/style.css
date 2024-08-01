@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:none;
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8yM193YXRlcmNvbG9yX2lsbHVzdHJhdGlvbl9vZl9ncmVlbl9wYXN0ZWxfYmFja181Zjg4YmIwZS0xNWZkLTRkNGItYTNlNS0zZDYyOTdiNjk3NDdfMS5qcGc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;;
+    text-align: center;
+    box-shadow: #101010;
+}
+
+h1 {
+    text-align: center;
+    color: #3a3a3a;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: inline-block;
+    width: 150px;
+    color: #113859;
+}
+
+.input-group input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+    color: #495057;
+}
+
+#predictions {
+    margin-top: 50px;
+}
+
+.predictions {
+    margin-top: 20px;
+}
+
+.predictions h2 {
+    margin-bottom: 10px;
+    color: #3a3a3a;
+}
+
+.predictions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.predictions th,
+.predictions td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+.predictions th {
+    background-color: #f0f3f5;
+    color: #495057;
+}
+
+.predictions tr:nth-child(even) {
+    background-color: #4e92d6;
+}
+
+.predictions tr:hover {
+    background-color: #8cbbe9;
+    color: #175695;
+}
+form {
+
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(234, 226, 226, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(16, 1, 1, 0.5);
+}

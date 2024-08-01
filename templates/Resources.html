@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: none;
+            background-image: url('https://img.freepik.com/free-photo/blank-papers-multicolor-pencils-grey_114579-28815.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+</head>
+
+<body>
+    <h1>Resources</h1>
+    
+    <!-- Textbooks and Study Materials -->
+    <div>
+        <h2>Textbooks and Study Materials</h2>
+        <select id="textbooks-dropdown">
+            <option value="">Select Option</option>
+            <option value="https://www.ncert.nic.in/textbook/textbook.htm">NCERT textbooks for Physics, Chemistry, Mathematics, and English</option>
+            <option value="https://www.amazon.in/Concepts-Physics-H-C-Verma/dp/8177091875">"Concepts of Physics" by HC Verma</option>
+            <option value="https://www.amazon.in/Organic-Chemistry-Class-Tandon/dp/9382314414">"Organic Chemistry" by OP Tandon</option>
+            <option value="https://www.amazon.in/Objective-Mathematics-Set-Sharma/dp/9382314392">"Objective Mathematics" by RD Sharma</option>
+        </select>
+        <button onclick="openLink('textbooks-dropdown')">Go</button>
+    </div>
+
+    <!-- Coaching Institutes -->
+    <div>
+        <h2>Coaching Institutes</h2>
+        <select id="coaching-dropdown">
+            <option value="">Select Option</option>
+            <option value="https://www.fiitjee.com/">FIITJEE</option>
+            <option value="https://www.allen.ac.in/">Allen Career Institute</option>
+            <option value="https://www.resonance.ac.in/">Resonance</option>
+        </select>
+        <button onclick="openLink('coaching-dropdown')">Go</button>
+    </div>
+
+    <!-- Online Platforms -->
+    <div>
+        <h2>Online Platforms</h2>
+        <select id="online-dropdown">
+            <option value="">Select Option</option>
+            <option value="https://www.khanacademy.org/">Khan Academy</option>
+            <option value="https://www.coursera.org/">Coursera</option>
+            <option value="https://www.youtube.com/results?search_query=IIT+JEE+preparation">YouTube channels dedicated to IIT JEE preparation</option>
+        </select>
+        <button onclick="openLink('online-dropdown')">Go</button>
+    </div>
+
+    <!-- Mock Tests and Sample Papers -->
+    <div>
+        <h2>Mock Tests and Sample Papers</h2>
+        <select id="mocktests-dropdown">
+            <option value="">Select Option</option>
+            <option value="https://www.embibe.com/">Embibe</option>
+            <option value="https://www.toppr.com/">Toppr</option>
+            <option value="https://www.testbook.com/">Testbook</option>
+        </select>
+        <button onclick="openLink('mocktests-dropdown')">Go</button>
+    </div>
+
+    <!-- Reference Books -->
+    <div>
+        <h2>Reference Books</h2>
+        <select id="reference-dropdown">
+            <option value="">Select Option</option>
+            <option value="https://www.amazon.in/Concepts-Physics-H-C-Verma/dp/8177091875">"Concepts of Physics" by HC Verma</option>
+            <option value="https://www.amazon.in/Chemistry-JEE-Main-Advanced-Narendra/dp/1259029968">"Chemistry for JEE Main & Advanced" by Narendra Awasthi</option>
+            <option value="https://www.amazon.in/Mathematics-Class-12-R-D-Sharma/dp/8177099841">"Mathematics for Class 12" by RD Sharma</option>
+        </select>
+        <button onclick="openLink('reference-dropdown')">Go</button>
+    </div>
+
+    <!-- Study Groups and Online Forums -->
+    <div>
+        <h2>Study Groups and Online Forums</h2>
+        <select id="studygroups-dropdown">
+            <option value="">Select Option</option>
+            <option value="https://www.quora.com/">Quora</option>
+            <option value="https://www.reddit.com/">Reddit</option>
+            <option value="https://www.facebook.com/groups/IITJEEPreparation/">Dedicated Facebook groups</option>
+        </select>
+        <button onclick="openLink('studygroups-dropdown')">Go</button>
+    </div>
+
+    <!-- Time Management Tools -->
+    <div>
+        <h2>Time Management Tools</h2>
+        <select id="timemanagement-dropdown">
+            <option value="">Select Option</option>
+            <option value="https://www.forestapp.cc/">Forest</option>
+            <option value="https://todoist.com/">Todoist</option>
+            <option value="https://pomodoneapp.com/">Pomodone</option>
+        </select>
+        <button onclick="openLink('timemanagement-dropdown')">Go</button>
+    </div>
+
+    <script>
+        // Function to open link when button is clicked
+        function openLink(dropdownId) {
+            var selectElement = document.getElementById(dropdownId);
+            var selectedOption = selectElement.value;
+            if (selectedOption !== "") {
+                window.open(selectedOption, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
